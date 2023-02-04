@@ -17,19 +17,17 @@ tags: ["variables", "python"]
 
 We just used a `###` subheading in our blog post.
 
-<SyntaxHighlighter language="javascript">
-  {`
-    const doStuff = () => {
-      return console.log('hey')
-    }
-  `}
-</SyntaxHighlighter>
-
-```
-  // this is a code block
-  const doSomething = () => {
-    return console.log('hey')
-  }
+```js
+// this is a code block
+const doSomething = () => {
+  return console.log("hey");
+};
 ```
 
-<div>Here, I'm using a component inside my MarkDown file: {<Button text={"Click me"}/>}</div>
+```cpp:main.cpp
+for(int i = 0; i < 10; i++) {
+     std::cout << i << std::endl;
+}
+```
+
+<div>Here, I'm using a component inside my MarkDown file: {<Button>Click me</Button>}</div>
