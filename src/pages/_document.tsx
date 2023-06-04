@@ -10,6 +10,8 @@ export default function Document() {
         integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
         crossOrigin="anonymous"
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Muhammad Garebaldhie</title>
       <body>
         <Main />
         <NextScript />
