@@ -4,7 +4,7 @@ description: 'Welcome everyone'
 slug: 'hello-world'
 published: '2023-06-04'
 category: 'misc'
-image: '/public/vercel.svg'
+image: '/vercel.svg'
 ---
 
 # My First Post

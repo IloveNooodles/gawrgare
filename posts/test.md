@@ -1,9 +1,9 @@
 ---
-title: 'My First Post'
-description: 'My very first blog post'
-slug: 'test'
+title: 'Optimizing docker container using multistage docker build'
+description: 'Optimizing docker container using multistage docker build'
+slug: 'optimizing-docker-container-using-multistage-docker-build'
 published: '2021-10-10'
-category: 'javascript'
+category: 'Docker'
 image: '/FotoJet.jpg'
 ---
 

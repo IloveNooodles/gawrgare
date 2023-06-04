@@ -1,0 +1,37 @@
+.cards {
+  background-color: gray;
+  margin: 1rem;
+  min-width: 15rem;
+  max-width: 20rem;
+  max-width: 15rem;
+
+  border-radius: 0.5rem;
+
+  h1 {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 0.5rem;
+    text-transform: capitalize;
+  }
+}
+
+.image-container {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.content {
+  overflow: auto;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.content-meta {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  font-size: 0.875em;
+  padding: 0.25rem 0;
+}

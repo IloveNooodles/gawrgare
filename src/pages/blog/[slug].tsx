@@ -1,10 +1,8 @@
+import { inter } from "@/fonts/fonts";
 import { getDocBySlug } from "@/lib/docs";
 import markdownToHtml from "@/lib/markdown";
 import fs from "fs";
-import { Inter } from "next/font/google";
 import { join } from "path";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export async function getStaticPaths() {
   const path = join(process.cwd(), "posts");
@@ -44,7 +42,6 @@ export async function getStaticProps(props: PostProps) {
 }
 
 export default function Home(props: any) {
-
   return (
     <main className={inter.className}>
       <div dangerouslySetInnerHTML={{ __html: props.markdownProcessed }}></div>
