@@ -6,7 +6,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export async function getStaticProps() {
   let markdownData = getDocBySlug("test.md");
-  // markdownToHtml(markdownData);
   let { content, meta, slug } = markdownData;
 
   let markdownProcessed = await markdownToHtml(content);

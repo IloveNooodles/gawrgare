@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import "@/styles/prism.css";
+// import "@/styles/prism.css";
 import "@/styles/overrides.css";
 
 import type { AppProps } from "next/app";

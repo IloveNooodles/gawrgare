@@ -1,5 +1,4 @@
 import { getDocBySlug } from "@/lib/docs";
-import Katex from "@/lib/katek";
 import markdownToHtml from "@/lib/markdown";
 import fs from "fs";
 import { Inter } from "next/font/google";
@@ -20,7 +19,13 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps(props: any) {
+interface PostProps {
+  params: {
+    slug: string;
+  };
+}
+
+export async function getStaticProps(props: PostProps) {
   const { slug } = props.params;
 
   let markdownData = getDocBySlug(slug);
@@ -45,7 +50,6 @@ export default function Home(props: any) {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
-      <Katex />
       <div dangerouslySetInnerHTML={{ __html: props.markdownProcessed }}></div>
     </main>
   );

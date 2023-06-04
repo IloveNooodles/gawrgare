@@ -1,10 +1,10 @@
 ---
 title: 'My First Post'
 description: 'My very first blog post'
-slug: 'post-1'
+slug: 'test'
 published: '2021-10-10'
 category: 'javascript'
-image: '/public/vercel.svg'
+image: '/FotoJet.jpg'
 ---
 
 # My First Post
@@ -13,7 +13,7 @@ image: '/public/vercel.svg'
 
 I **love** using [Next.js](https://nextjs.org/)
 
-```cpp
+```js:test/js showLineNumbers
 int i = 0;
 i++;
 
@@ -37,9 +37,20 @@ for(let i = 0; i < 3; i++){
 
 ```
 
-~~test~~
-[x] test
+```python:solve.py showLineNumbers
+f = open("read.enc", "rb")
+```
+
+![logo](https://www.raspberrypi.org/app/uploads/2018/03/RPi-Logo-Reg-SCREEN-199x250.png "Raspberry pi")
+
+Here are some math equation
 
 $$
 {X \sim Normal \; (\mu,\sigma^2)}
+$$
+$$
+\prod_{i=1}^{n} x_i - 1
+$$
+$$
+\mathrm{e} = \sum_{n=0}^{\infty} \dfrac{1}{n!}
 $$

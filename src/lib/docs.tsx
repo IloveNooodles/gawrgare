@@ -1,3 +1,4 @@
+import { PostMetadata } from "@/pages/blog";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
@@ -10,5 +11,5 @@ export function getDocBySlug(slug: string) {
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { slug: realSlug, meta: data, content };
+  return { slug: realSlug, meta: data as PostMetadata, content };
 }

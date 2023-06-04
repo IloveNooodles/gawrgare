@@ -37,7 +37,7 @@ pre[class*="language-"] ::selection {
 
 :not(pre) > code[class*="language-"] {
   white-space: normal;
-  border-radius: 0.2em;
+  border-radius: 0.5em;
   padding: 0.1em;
 }
 
@@ -46,6 +46,7 @@ pre[class*="language-"] {
   position: relative;
   margin: 0.5em 0;
   padding: 1.25em 1em;
+  border-radius: 0.3em;
 }
 
 .language-css > code,
@@ -207,4 +208,50 @@ pre[class*="language-"] {
 
 .token.variable {
   color: #f07178;
+}
+
+.rehype-code-title {
+  margin-bottom: -1rem;
+  margin-top: 0.5rem;
+  padding: 0.5em 1rem;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
+
+  color: #c3cee3;
+  font-weight: bold;
+  background: #263238;
+  z-index: 9;
+
+  border-bottom: 1px solid 263238;
+
+  border-top-left-radius: 0.3em;
+  border-top-right-radius: 0.3em;
+}
+
+.code-highlight {
+  width: 100%;
+  float: left;
+}
+
+.code-line {
+  display: block;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.highlight-line {
+  margin-right: -16px;
+  margin-left: -16px;
+  background-color: var(--color-code-line-highlight);
+}
+
+.line-number::before {
+  content: attr(line);
+  margin-left: -8px;
+  padding-right: 16px;
+  color: var(--color-code-line-number);
 }
