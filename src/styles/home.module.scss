@@ -1,0 +1,28 @@
+.span-style {
+  letter-spacing: 0.5em;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 2rem;
+  padding-top: 2rem;
+  flex-direction: row;
+}
+
+.text-container {
+  text-align: left;
+  width: 32rem;
+
+  p {
+    text-align: left;
+    width: fit-content;
+  }
+}
+
+.heading {
+  font-size: 2em;
+  padding-bottom: 2rem;
+  text-align: center;
+}
