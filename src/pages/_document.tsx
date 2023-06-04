@@ -12,6 +12,7 @@ export default function Document() {
       />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Muhammad Garebaldhie</title>
+      <link rel="icon" href="/logo.png" type="image/x-icon" />
       <body>
         <Main />
         <NextScript />

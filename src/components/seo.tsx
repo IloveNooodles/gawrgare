@@ -6,7 +6,7 @@ export default function Seo({ ...metadata }) {
   const meta = {
     title: "Muhammad Garebaldhie",
     description: "Muhammad Garebaldhie personal website",
-    image: `${url}/gare.png`,
+    image: `${url}/logo.png`,
     ...metadata,
   };
 
@@ -24,8 +24,6 @@ export default function Seo({ ...metadata }) {
       <meta content={meta.title} name="twitter:title" />
       <meta content={meta.description} name="twitter:description" />
       <meta content={meta.image} name="twitter:image" />
-
-      <link rel="icon" href="https://fav.farm/🌱" />
     </Head>
   );
 }

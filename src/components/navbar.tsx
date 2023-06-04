@@ -2,6 +2,7 @@ import { inter } from "@/fonts/fonts";
 import styles from "@/styles/navbar.module.scss";
 import Link from "next/link";
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { LuGithub, LuInstagram, LuLinkedin} from "react-icons/lu"
 
 export default function Navbar() {
   return (
@@ -21,7 +22,7 @@ export default function Navbar() {
         </li>
         <li>
           <a href="https://www.linkedin.com/in/garebaldhie/">
-            <BsLinkedin />
+            <LuLinkedin />
           </a>
         </li>
         <li>
@@ -30,12 +31,12 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsInstagram />
+            <LuInstagram />
           </a>
         </li>
         <li>
           <a href="https://github.com/IloveNooodles">
-            <BsGithub />
+            <LuGithub />
           </a>
         </li>
       </ul>
