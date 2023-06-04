@@ -3,7 +3,7 @@ import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
-const docsDirectory = join(process.cwd(), "docs");
+const docsDirectory = join(process.cwd(), "posts");
 
 export function getDocBySlug(slug: string) {
   const realSlug = slug.replace(/\.md$/, "");

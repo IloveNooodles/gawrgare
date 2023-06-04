@@ -17,7 +17,7 @@ interface BlogProps {
 }
 
 export function getStaticProps() {
-  const path = join(process.cwd(), "docs");
+  const path = join(process.cwd(), "posts");
   const slugs = fs.readdirSync(path);
 
   const postsMetadata: PostMetadata[] = [];
