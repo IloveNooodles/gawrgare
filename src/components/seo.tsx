@@ -1,13 +1,16 @@
-import Head from "next/head";
+import { SeoMetadata } from '@/types/seo';
+import Head from 'next/head';
 
-export default function Seo({ ...metadata }) {
-  const url = "http://gawrgare.tech";
+
+
+export default function Seo(props: SeoMetadata) {
+  const url = 'http://gawrgare.tech';
 
   const meta = {
-    title: "Muhammad Garebaldhie",
-    description: "Muhammad Garebaldhie personal website",
+    title: 'Muhammad Garebaldhie',
+    description: 'Muhammad Garebaldhie personal website',
     image: `${url}/logo.png`,
-    ...metadata,
+    ...props,
   };
 
   return (

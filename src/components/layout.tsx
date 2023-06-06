@@ -5,7 +5,6 @@ import Seo from "./seo";
 export default function Layout({ children }: PropsWithChildren) {
   return (
     <>
-      <Seo />
       <Navbar />
       {children}
     </>

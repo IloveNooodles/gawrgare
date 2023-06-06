@@ -1,11 +1,9 @@
-import Head from "next/head";
+import Seo from '@/components/seo';
 
 export default function Error404() {
   return (
     <>
-      <Head>
-        <title>Page not found</title>
-      </Head>
+      <Seo title="Page Not Found" />
       <h1>404 - Page Not Found</h1>
     </>
   );

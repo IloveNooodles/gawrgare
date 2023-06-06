@@ -1,4 +1,5 @@
 import PostCard from "@/components/post-cards";
+import Seo from "@/components/seo";
 import { getDocBySlug } from "@/lib/docs";
 import fs from "fs";
 import { join } from "path";
@@ -42,6 +43,7 @@ export default function Blog(props: BlogProps) {
 
   return (
     <>
+      <Seo />
       Test ini blog page
       <p>test</p>
       <p>2</p>
