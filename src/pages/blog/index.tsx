@@ -1,8 +1,8 @@
-import PostCard from "@/components/post-cards";
-import Seo from "@/components/seo";
-import { getDocBySlug } from "@/lib/docs";
-import fs from "fs";
-import { join } from "path";
+import PostCard from '@/components/post-cards';
+import Seo from '@/components/seo';
+import { getDocBySlug } from '@/lib/docs';
+import fs from 'fs';
+import { join } from 'path';
 
 export interface PostMetadata {
   title: string;
@@ -18,13 +18,13 @@ interface BlogProps {
 }
 
 export function getStaticProps() {
-  const path = join(process.cwd(), "posts");
+  const path = join(process.cwd(), 'posts');
   const slugs = fs.readdirSync(path);
 
   const postsMetadata: PostMetadata[] = [];
 
   for (let slug of slugs) {
-    let formattedSlug = slug.replace(/\.md$/, "");
+    let formattedSlug = slug.replace(/\.md$/, '');
     let markdownData = getDocBySlug(formattedSlug);
     let { meta } = markdownData;
 
@@ -43,8 +43,8 @@ export default function Blog(props: BlogProps) {
 
   return (
     <>
-      <Seo />
-      Test ini blog page
+      <Seo title="Muhammad Garebaldhie - Blog" />
+      <h1>This is blogs page</h1>
       <p>test</p>
       <p>2</p>
       Ini links nya broh

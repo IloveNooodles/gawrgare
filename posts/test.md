@@ -4,7 +4,7 @@ description: 'Optimizing docker container using multistage docker build'
 slug: 'optimizing-docker-container-using-multistage-docker-build'
 published: '2021-10-10'
 category: 'Docker'
-image: '/FotoJet.jpg'
+image: '/logo.png'
 ---
 
 # My First Post

@@ -4,7 +4,7 @@ export default function Projects() {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Projects" />
-      <p>this is projects page</p>
+      <h1>this is projects page</h1>
     </>
   );
 }

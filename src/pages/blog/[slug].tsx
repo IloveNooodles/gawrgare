@@ -1,15 +1,17 @@
-import { inter } from "@/fonts/fonts";
-import { getDocBySlug } from "@/lib/docs";
-import markdownToHtml from "@/lib/markdown";
-import fs from "fs";
-import { join } from "path";
+import Seo from '@/components/seo';
+import { inter } from '@/fonts/fonts';
+import { getDocBySlug } from '@/lib/docs';
+import markdownToHtml from '@/lib/markdown';
+import fs from 'fs';
+import { join } from 'path';
+import { PostMetadata } from '.';
 
 export async function getStaticPaths() {
-  const path = join(process.cwd(), "posts");
+  const path = join(process.cwd(), 'posts');
   const posts = fs.readdirSync(path);
   const postPaths = posts.map((post) => post);
   const paths = postPaths.map((path) => ({
-    params: { slug: path.replace(/\.md$/, "") },
+    params: { slug: path.replace(/\.md$/, '') },
   }));
   return {
     paths,
@@ -29,8 +31,6 @@ export async function getStaticProps(props: PostProps) {
   let markdownData = getDocBySlug(slug);
   let { content, meta } = markdownData;
 
-  console.log(meta);
-
   let markdownProcessed = await markdownToHtml(content);
 
   return {
@@ -41,10 +41,26 @@ export async function getStaticProps(props: PostProps) {
   };
 }
 
-export default function Home(props: any) {
+export interface BlogPostProps {
+  markdownData: {
+    slug: string;
+    content: string;
+    meta: PostMetadata;
+  };
+  markdownProcessed: string;
+}
+
+export default function BlogPost(props: BlogPostProps) {
+  const { meta } = props.markdownData;
+
   return (
-    <main className={inter.className}>
-      <div dangerouslySetInnerHTML={{ __html: props.markdownProcessed }}></div>
-    </main>
+    <>
+      <Seo {...meta} />
+      <main className={inter.className}>
+        <div
+          dangerouslySetInnerHTML={{ __html: props.markdownProcessed }}
+        ></div>
+      </main>
+    </>
   );
 }

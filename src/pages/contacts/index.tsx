@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Contacts" />
-      <p>this is Contacts page</p>
+      <h1>this is Contacts page</h1>
     </>
   );
 }

@@ -1,16 +1,16 @@
 import { SeoMetadata } from '@/types/seo';
 import Head from 'next/head';
 
-
-
 export default function Seo(props: SeoMetadata) {
-  const url = 'http://gawrgare.tech';
+  const url = 'https://gawrgare.tech';
+
+  const imageUrl = `${url}/${props.imagePath || 'logo.png'}`;
 
   const meta = {
     title: 'Muhammad Garebaldhie',
     description: 'Muhammad Garebaldhie personal website',
-    image: `${url}/logo.png`,
     ...props,
+    image: imageUrl,
   };
 
   return (
