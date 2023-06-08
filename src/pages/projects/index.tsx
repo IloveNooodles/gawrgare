@@ -4,7 +4,10 @@ export default function Projects() {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Projects" />
-      <h1>this is projects page</h1>
+      <h1>
+        {' '}
+        me@gawrgare:~$ <span>cat projects.txt</span>
+      </h1>
     </>
   );
 }

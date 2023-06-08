@@ -4,7 +4,10 @@ export default function Contacts() {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Contacts" />
-      <h1>this is Contacts page</h1>
+      <h1>
+        {' '}
+        me@gawrgare:~$ <span>find / gare</span>
+      </h1>
     </>
   );
 }

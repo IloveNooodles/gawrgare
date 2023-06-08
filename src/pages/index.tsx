@@ -1,8 +1,9 @@
-import Seo from "@/components/seo";
-import { ubuntuMono } from "@/fonts/fonts";
-import styles from "@/styles/home.module.scss";
-import Image from "next/image";
-import Gare from "/public/gare.jpg";
+import Seo from '@/components/seo';
+import { ubuntuMono } from '@/fonts/fonts';
+import styles from '@/styles/home.module.scss';
+import Image from 'next/image';
+import Link from 'next/link';
+import Gare from '/public/gare.jpg';
 
 export default function Home() {
   return (
@@ -10,12 +11,12 @@ export default function Home() {
       <Seo />
       <main className={ubuntuMono.className}>
         <h1>
-          root@gawrgare:~#{" "}
-          <span className={styles["span-style"]}> Whoami </span>
+          me@gawrgare:~${' '}
+          <span className={styles['span-style']}> Whoami </span>
         </h1>
         <section className={styles.container}>
           <Image src={Gare} alt="Gare's photo" width={250} />
-          <div className={styles["text-container"]}>
+          <div className={styles['text-container']}>
             <h2 className={styles.heading}>Muhammad Garebaldhie</h2>
             <p>
               Hello, I&apos;m Gare, a Software Engineer and Cybersecurity
@@ -23,16 +24,16 @@ export default function Home() {
             </p>
             <br />
             <p>
-              Currently working in{" "}
+              Currently working in{' '}
               <span>
                 <a href="https://www.makmur.id/">makmur.id</a>
-              </span>{" "}
+              </span>{' '}
               as an software engineer intern. Previously was working as an
-              intern in{" "}
+              intern in{' '}
               <span>
                 <a href="https://www.sayurbox.com/">Sayurbox</a>
               </span>
-              ,{" "}
+              ,{' '}
               <span>
                 <a href="https://www.garena.co.id/">Garena</a>
               </span>
@@ -49,6 +50,8 @@ export default function Home() {
               listening to music, and watching movies. By far, my favorite
               movies is Interstellar and Steins;Gate
             </p>
+            <br />
+            <Link href="/contacts">Let&apos;s Be friend!</Link>
           </div>
         </section>
       </main>

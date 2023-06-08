@@ -44,7 +44,10 @@ export default function Blog(props: BlogProps) {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Blog" />
-      <h1>This is blogs page</h1>
+      <h1>
+        {' '}
+        me@gawrgare:~$ <span>echo $BLOG_LIST</span>
+      </h1>
       <p>test</p>
       <p>2</p>
       Ini links nya broh
