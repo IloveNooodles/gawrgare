@@ -12,3 +12,15 @@ $phone: 800px;
     @content;
   }
 }
+
+@mixin rev-phone {
+  @media screen and (min-width: $phone) {
+    @content;
+  }
+}
+
+@mixin rev-tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}

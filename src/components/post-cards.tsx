@@ -1,7 +1,7 @@
 import { inter } from "@/fonts/fonts";
 import { PostMetadata } from "@/pages/blog";
 import styles from "@/styles/postCards.module.scss";
-import { formatDate } from "@/utils/formatter";
+import { formatDate } from "@/utils/date";
 import Image from "next/image";
 import Link from "next/link";
 
