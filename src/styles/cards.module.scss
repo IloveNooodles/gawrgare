@@ -1,0 +1,47 @@
+@import 'mixins';
+@import 'variables';
+
+.cards {
+  padding: $normal / 2;
+  display: flex;
+  max-width: $max-card-width;
+  border: 0.1px solid $grey;
+  transition: 0.3s all ease;
+
+  &:hover {
+    border-color: $white;
+  }
+
+  h2 {
+    font-size: $font-big;
+    color: $white;
+    padding-bottom: $small / 2;
+  }
+
+  p {
+    font-size: $font-normal;
+    text-align: left;
+    padding: $small;
+    padding-left: 0;
+  }
+  a {
+    font-size: $font-normal;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $normal / 2;
+  }
+
+  span {
+    font-weight: bold;
+    // color: $green;
+  }
+}
+
+.cards-links {
+  display: flex;
+  column-gap: $small;
+  padding: $small;
+  padding-left: 0;
+}

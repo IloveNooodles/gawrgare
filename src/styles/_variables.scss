@@ -7,7 +7,7 @@ $green: #097d0e;
 $links: #e7f7e8;
 
 /* Border Radius */
-$border-radius: 1;
+$border-radius: 0.25em;
 $spacing: 0.25em;
 $line-heigth: 1em;
 
@@ -21,9 +21,11 @@ $big: 2em;
 
 /* Width Heigth */
 $full: 100%;
+$max-card-width: 26rem;
 
 /* Font */
-$font-small: 1rem;
+$font-small: 0.5rem;
+$font-normal: 1rem;
 $font-xmedium: 1.125rem;
 $font-medium: 1.5rem;
 $font-big: 2rem;

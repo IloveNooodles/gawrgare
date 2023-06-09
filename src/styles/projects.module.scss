@@ -1,0 +1,13 @@
+@import 'mixins';
+@import 'variables';
+
+.projects {
+  h1 {
+    padding-bottom: $normal / 2;
+  }
+}
+
+.project-container {
+  display: grid;
+  row-gap: $normal;
+}

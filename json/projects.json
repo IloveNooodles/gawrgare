@@ -1,0 +1,47 @@
+[
+  {
+    "title": "DNAObama",
+    "description": "Dna string pattern matching website",
+    "techStackUsed": "React, Sequelize, Express, CSS",
+    "githubLink": "https://github.com/IloveNooodles/dna-obama",
+    "websiteLink": "https://dna-obama.vercel.app/",
+    "category": "projects",
+    "date": "Apr 29, 2022"
+  },
+  {
+    "title": "Comfy Store",
+    "description": "An online store with vanilla techstack",
+    "techStackUsed": "HTML, CSS, JS",
+    "githubLink": "https://github.com/IloveNooodles/comfy-store",
+    "websiteLink": "https://comfy-store-jr0b8ok48-ilovenooodles.vercel.app/",
+    "category": "mini-projects",
+    "date": "Jun 15, 2022"
+  },
+  {
+    "title": "Svelte-TS",
+    "description": "Mini project compilation of svelte with typescript",
+    "techStackUsed": "Svelte, TS, CSS",
+    "githubLink": "https://github.com/IloveNooodles/svelte-ts-mini-project",
+    "websiteLink": "https://svelte-ts-mini-project.vercel.app/",
+    "category": "mini-projects",
+    "date": "Jun 15, 2022"
+  },
+  {
+    "title": "GICC",
+    "description": "Ganesha Integration Case Competition (GICC) is business case competition held by KM ITB",
+    "techStackUsed": "React, JS, Mongoose, MongoDB, CSS",
+    "githubLink": "https://github.com/IloveNooodles/GICC",
+    "websiteLink": "https://svelte-ts-mini-project.vercel.app/",
+    "category": "projects",
+    "date": "Jun 15, 2022"
+  },
+  {
+    "title": "GICC",
+    "description": "Ganesha Integration Case Competition (GICC) is business case competition held by KM ITB",
+    "techStackUsed": "React, JS, Mongoose, MongoDB, CSS",
+    "githubLink": "https://github.com/IloveNooodles/GICC",
+    "websiteLink": "https://svelte-ts-mini-project.vercel.app/",
+    "category": "projects",
+    "date": "Jun 15, 2022"
+  }
+]
