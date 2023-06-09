@@ -7,7 +7,7 @@ import useSWR from 'swr';
 
 export const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
-const renderProjects = (data, error, isLoading) => {
+const renderProjects = (data: any, error: any, isLoading: boolean) => {
   if (isLoading) {
     return <p>Loading</p>;
   }
@@ -58,9 +58,7 @@ export default function Projects() {
           {' '}
           me@gawrgare:~$ <span>cat projects</span>
         </h1>
-        <div>
-          {renderProjects(data, error, isLoading)}
-        </div>
+        <div>{renderProjects(data, error, isLoading)}</div>
       </main>
     </>
   );
