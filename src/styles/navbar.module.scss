@@ -59,3 +59,10 @@
     color: white !important;
   }
 }
+
+.disabled {
+  &:hover {
+    padding: 0;
+    background-color: black;
+  }
+}

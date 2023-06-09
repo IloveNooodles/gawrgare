@@ -1,4 +1,4 @@
-import { inter } from '@/fonts/fonts';
+import { ubuntuMono } from '@/fonts/fonts';
 import styles from '@/styles/navbar.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -7,8 +7,8 @@ import Logo from '/public/logo.png';
 
 export default function Navbar() {
   return (
-    <nav className={`${styles.navbar} ${inter.className} `}>
-      <Link href="/">
+    <nav className={`${styles.navbar} ${ubuntuMono.className} `}>
+      <Link href="/" className={styles.disabled}>
         <Image src={Logo} alt="Gare logo" />
       </Link>
       <ul className={styles.navlinks}>
