@@ -9,5 +9,18 @@
 
 .project-container {
   display: grid;
-  row-gap: $normal;
+  gap: $normal;
+  align-items: center;
+
+  @include rev-phone {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include rev-tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.vertical {
+  padding: $normal 0;
 }
