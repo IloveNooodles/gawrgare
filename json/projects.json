@@ -31,17 +31,224 @@
     "description": "Ganesha Integration Case Competition (GICC) is business case competition held by KM ITB",
     "techStackUsed": "React, JS, Mongoose, MongoDB, CSS",
     "githubLink": "https://github.com/IloveNooodles/GICC",
-    "websiteLink": "https://svelte-ts-mini-project.vercel.app/",
+    "websiteLink": "https://gicc.gawrgare.tech/",
     "category": "projects",
+    "date": "Apr 4, 2022"
+  },
+  {
+    "title": "TS Mini Project",
+    "description": "Collection of miniprojects created using typescript",
+    "techStackUsed": "HTML, TS, CSS",
+    "githubLink": "https://github.com/IloveNooodles/vanilla-ts-project",
+    "websiteLink": "https://vanilla-ts-project-d6s323oe4-ilovenooodles.vercel.app/",
+    "category": "mini-projects",
     "date": "Jun 15, 2022"
   },
   {
-    "title": "GICC",
-    "description": "Ganesha Integration Case Competition (GICC) is business case competition held by KM ITB",
-    "techStackUsed": "React, JS, Mongoose, MongoDB, CSS",
-    "githubLink": "https://github.com/IloveNooodles/GICC",
-    "websiteLink": "https://svelte-ts-mini-project.vercel.app/",
+    "title": "Tea Station",
+    "description": "Landing page of company website called tea station",
+    "techStackUsed": "HTML, CSS, JS",
+    "githubLink": "https://github.com/IloveNooodles/html-css-project",
+    "websiteLink": "https://gare-tea-station.netlify.app/",
+    "category": "mini-projects",
+    "date": "Jan 14, 2022"
+  },
+  {
+    "title": "Backroads Tour",
+    "description": "Landing page of company website called backroads tour",
+    "techStackUsed": "HTML, CSS, JS",
+    "githubLink": "https://github.com/IloveNooodles/html-css-project",
+    "websiteLink": "https://gare-backroads-tour.netlify.app/",
+    "category": "mini-projects",
+    "date": "Jan 11, 2022"
+  },
+  {
+    "title": "Dummy portofolio",
+    "description": "Create dummy portofolio using vanilla stack",
+    "techStackUsed": "HTML, CSS, JS",
+    "githubLink": "https://github.com/IloveNooodles/html-css-project",
+    "websiteLink": "https://gare-portofolio-project.netlify.app/",
+    "category": "mini-projects",
+    "date": "Feb 4, 2022"
+  },
+  {
+    "title": "Df VCS",
+    "description": "Simple implementation of Version Control System",
+    "techStackUsed": "Bash",
+    "githubLink": "https://github.com/IloveNooodles/df-vcs",
     "category": "projects",
-    "date": "Jun 15, 2022"
+    "date": "Jul 15, 2022"
+  },
+  {
+    "title": "News API",
+    "description": "Clean architecture of simple News API",
+    "techStackUsed": "Golang, go-migrate, redis, postgreSQL, docker",
+    "githubLink": "https://github.com/IloveNooodles/news-crud-api",
+    "category": "projects",
+    "date": "Aug 6, 2022"
+  },
+  {
+    "title": "Ususbuntu OS",
+    "description": "16bit OS",
+    "techStackUsed": "C, Bochs, NASM",
+    "githubLink": "https://github.com/IloveNooodles/ususbuntu-operating-system",
+    "category": "projects",
+    "date": "Aug 6, 2022"
+  },
+  {
+    "title": "TCP Over UDP",
+    "description": "Implementation of how TCP work in UDP Protocol with Go Back N",
+    "techStackUsed": "C, Bochs, NASM",
+    "githubLink": "https://github.com/IloveNooodles/ususbuntu-operating-system",
+    "category": "projects",
+    "date": "Nov 18, 2022"
+  },
+  {
+    "title": "fitpal",
+    "description": "FitPal merupakan sebuah aplikasi desktop yang dapat membantu pengguna untuk menyusun program olahraga secara pribadi. Aplikasi FitPal dibuat dan dikembangkan dengan bahasa Pemrograman Python.",
+    "techStackUsed": "Python, sqlite3",
+    "githubLink": "https://github.com/IloveNooodles/fitpal",
+    "category": "projects",
+    "date": "Apr 20, 2022"
+  },
+  {
+    "title": "Binotify",
+    "description": "Binotify is a spotify like web application with microservice architecture",
+    "techStackUsed": "PHP, SOAP, Express, React, TS, HTML, CSS, JS, Docker",
+    "githubLink": "https://github.com/IloveNooodles/binotify-app",
+    "category": "projects",
+    "date": "Dec 2, 2022"
+  },
+  {
+    "title": "Go gRPC",
+    "description": "Implementation of gRPC protocol",
+    "techStackUsed": "Go",
+    "githubLink": "https://github.com/IloveNooodles/Go-gRPC",
+    "category": "projects",
+    "date": "Dec 28, 2022"
+  },
+  {
+    "title": "Terraform-ECS-Nginx-Cluster",
+    "description": "Terraform is an infrastructure as code (IaC) that can help you to manage your infrastructure with configuration files and cli",
+    "techStackUsed": "Terraform",
+    "githubLink": "https://github.com/IloveNooodles/Terraform-ECS-Nginx-Cluster",
+    "category": "projects",
+    "date": "Dec 23, 2022"
+  },
+  {
+    "title": "nicscrapper",
+    "description": "Tiny Go-based binary to scrape from nic.itb.ac.id",
+    "techStackUsed": "Go",
+    "githubLink": "https://github.com/mkamadeus/nicscraper",
+    "category": "contributed",
+    "date": "Dec 23, 2022"
+  },
+  {
+    "title": "Classic Crypto Cipher",
+    "description": "Web based classic cryptography encryptor decryptor",
+    "techStackUsed": "Next, TS, python, flask",
+    "githubLink": "https://github.com/IloveNooodles/Classic-Crypto",
+    "category": "projects",
+    "date": "Feb 7, 2023"
+  },
+  {
+    "title": "2d Cad WebGl",
+    "description": "2d Computer Aid Design of WebGL",
+    "techStackUsed": "JS",
+    "githubLink": "https://github.com/IloveNooodles/Grafkom-WebGL",
+    "websiteLink": "https://ilovenooodles.github.io/Grafkom-WebGL/src/",
+    "category": "projects",
+    "date": "Feb 26, 2023"
+  },
+  {
+    "title": "Majika",
+    "description": "Majika adalah aplikasi restoran makanan berbasis Android. Aplikasi ini menyediakan daftar menu yang dimiliki oleh restoran, sekaligus pemesanan menu dan melakukan pembayaran dengan QR code.",
+    "techStackUsed": "Kotlin, Android Studio",
+    "githubLink": "https://github.com/IloveNooodles/Majika",
+    "category": "projects",
+    "date": "Feb 24, 2023"
+  },
+  {
+    "title": "3d WebGL Hollow Object",
+    "description": "Created 3d hollow object in webgl",
+    "techStackUsed": "js",
+    "githubLink": "https://github.com/IloveNooodles/IF3260_Tugas2_K01_G16",
+    "websiteLink": "https://ilovenooodles.github.io/IF3260_Tugas2_K01_G16/src/",
+    "category": "projects",
+    "date": "Feb 24, 2023"
+  },
+  {
+    "title": "Regina",
+    "description": "Regina is a block cipher that created based on AES and DES and feistel network. It uses the Sbox from AES and Feistel network from DES.",
+    "techStackUsed": "Python",
+    "githubLink": "https://github.com/IloveNooodles/design-block-cipher",
+    "category": "projects",
+    "date": "Mar 26, 2023"
+  },
+  {
+    "title": "ECDSA and SHA-3 in mobile-app",
+    "description": "Penerapan Elliptic Curve Cryptography ECDSA dan SHA-3 untuk Menandatangani Surel pada Perangkat Mobile",
+    "techStackUsed": "Python, kotlin",
+    "githubLink": "https://github.com/IloveNooodles/ECDSA-SHA3-Mobile-Signing",
+    "category": "projects",
+    "date": "Apr 19, 2023"
+  },
+  {
+    "title": "Simple Rust Multithreaded Server",
+    "description": "This repository is multithreaded web server created using rust. It followed the the implementation from rust-by-example by creating threadpool to handle all incoming request",
+    "techStackUsed": "Rust",
+    "githubLink": "https://github.com/IloveNooodles/simple-multithreaded-rust-webserver",
+    "category": "mini-projects",
+    "date": "Apr 22, 2023"
+  },
+  {
+    "title": "3D WebGL Articulated Model",
+    "description": "3D WebGL Articulated Model Viewer adalah sebuah program berbasis web jenis 3D Object Viewer yang dibangun menggunakan kakas WebGL.",
+    "techStackUsed": "js",
+    "githubLink": "https://github.com/IloveNooodles/IF3260_Tugas3_K01_G11",
+    "websiteLink": "https://articulated.gawrgare.tech/src/index.html",
+    "category": "projects",
+    "date": "Apr 25, 2023"
+  },
+  {
+    "title": "SIX ITB Scrapper",
+    "description": "This repository aims to get all of available matakuliah and dosen information from all of prodi and facutly in ITB",
+    "techStackUsed": "Python",
+    "githubLink": "https://github.com/IloveNooodles/SIX-ITB-Scrapper",
+    "category": "projects",
+    "date": "Apr 30, 2023"
+  },
+  {
+    "title": "Extended Survival Shooter",
+    "description": "Extended Survival Shooter adalah sebuah game yang dibuat dengan Unity. Game ini merupakan perluasan dari game Agate Survival Shooter.",
+    "techStackUsed": "Unity",
+    "githubLink": "https://github.com/IloveNooodles/Extended-Survival-Shooter",
+    "category": "projects",
+    "date": "Apr 16, 2023"
+  },
+  {
+    "title": "Caridosen",
+    "description": "Caridosen is data aggregator for mahasiswa, kampus, and matakuliah in Indonesia",
+    "techStackUsed": "Go, Next, TS",
+    "githubLink": "https://github.com/IloveNooodles/Extended-Survival-Shooter",
+    "websiteLink": "https://www.caridosen.site/",
+    "category": "projects",
+    "date": "Apr 30, 2023"
+  },
+  {
+    "title": "Secure Env",
+    "description": "Secure your .env using ECElgamal algorithm",
+    "techStackUsed": "Python",
+    "githubLink": "https://github.com/IloveNooodles/secure-env",
+    "category": "projects",
+    "date": "May 21, 2023"
+  },
+  {
+    "title": "Raft",
+    "description": "Implementation of Raft Protocol",
+    "techStackUsed": "Python",
+    "githubLink": "https://github.com/IloveNooodles/raft-python",
+    "category": "projects",
+    "date": "May 24, 2023"
   }
 ]
