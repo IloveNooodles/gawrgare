@@ -14,9 +14,6 @@ export default function Navbar() {
       <ul className={styles.navlinks}>
         <div>
           <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
             <Link href="/projects">Projects</Link>
           </li>
           <li>

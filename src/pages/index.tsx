@@ -11,11 +11,15 @@ export default function Home() {
       <Seo />
       <main className={ubuntuMono.className}>
         <h1>
-          me@gawrgare:~${' '}
-          <span className={styles['span-style']}> Whoami </span>
+          me@gawrgare:~$ <span className={styles['span-style']}> Whoami </span>
         </h1>
         <section className={styles.container}>
-          <Image src={Gare} alt="Gare's photo" width={250} />
+          <Image
+            src={Gare}
+            alt="Gare's photo"
+            width={250}
+            className={styles.image}
+          />
           <div className={styles['text-container']}>
             <h2 className={styles.heading}>Muhammad Garebaldhie</h2>
             <p>

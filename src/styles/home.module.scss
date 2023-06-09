@@ -1,5 +1,5 @@
-@import "mixins";
-@import "variables";
+@import 'mixins';
+@import 'variables';
 
 .span-style {
   letter-spacing: $spacing;
@@ -22,10 +22,26 @@
     text-align: left;
     width: fit-content;
   }
+
+  @include phone {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 .heading {
   font-size: $font-big;
   padding-bottom: $big;
   text-align: center;
+
+  @include phone {
+    margin: 0;
+    padding-bottom: $big;
+  }
+}
+
+.image {
+  @include phone {
+    display: none;
+  }
 }
