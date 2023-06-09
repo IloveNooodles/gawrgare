@@ -1,13 +1,17 @@
 import Seo from '@/components/seo';
+import styles from "@/styles/projects.module.scss"
+import { ubuntuMono } from '@/fonts/fonts';
 
 export default function Projects() {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Projects" />
-      <h1>
-        {' '}
-        me@gawrgare:~$ <span>cat projects.txt</span>
-      </h1>
+      <main className={`${ubuntuMono.className}`}>
+        <h1>
+          {' '}
+          me@gawrgare:~$ <span>cat projects</span>
+        </h1>
+      </main>
     </>
   );
 }

@@ -1,5 +1,6 @@
 import PostCard from '@/components/post-cards';
 import Seo from '@/components/seo';
+import { ubuntuMono } from '@/fonts/fonts';
 import { getDocBySlug } from '@/lib/docs';
 import fs from 'fs';
 import { join } from 'path';
@@ -44,16 +45,18 @@ export default function Blog(props: BlogProps) {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Blog" />
-      <h1>
-        {' '}
-        me@gawrgare:~$ <span>echo $BLOG_LIST</span>
-      </h1>
-      <p>test</p>
-      <p>2</p>
-      Ini links nya broh
-      {posts.map((postProps, index) => {
-        return <PostCard key={index} {...postProps} />;
-      })}
+      <main className={`${ubuntuMono.className}`}>
+        <h1>
+          {' '}
+          me@gawrgare:~$ <span>echo $BLOGS</span>
+        </h1>
+        <p>test</p>
+        <p>2</p>
+        Ini links nya broh
+        {posts.map((postProps, index) => {
+          return <PostCard key={index} {...postProps} />;
+        })}
+      </main>
     </>
   );
 }

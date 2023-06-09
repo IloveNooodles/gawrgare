@@ -8,7 +8,6 @@
   flex-direction: row;
   align-items: center;
   column-gap: $normal;
-  padding: $big;
 
   li {
     text-transform: capitalize;
@@ -44,6 +43,8 @@
   display: flex;
   flex-direction: column;
   row-gap: $small;
+  padding: 1em;
+
   li {
     font-size: $font-medium;
   }
@@ -64,5 +65,14 @@
   &:hover {
     padding: 0;
     background-color: black;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  @include phone {
+    padding-right: 1em;
   }
 }

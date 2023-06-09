@@ -12,7 +12,7 @@ export default function Navbar() {
         <Image src={Logo} alt="Gare logo" />
       </Link>
       <ul className={styles.navlinks}>
-        <div>
+        <div className={styles.flex}>
           <li>
             <Link href="/projects">Projects</Link>
           </li>
@@ -23,7 +23,7 @@ export default function Navbar() {
             <Link href="/contacts">Contacts</Link>
           </li>
         </div>
-        <div className={styles.navmenu}>
+        <div className={`${styles.navmenu}`}>
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -39,7 +39,11 @@ export default function Navbar() {
         </div>
         <div className={styles.rel}>
           <li>
-            <a href="https://www.linkedin.com/in/garebaldhie/">
+            <a
+              href="https://www.linkedin.com/in/garebaldhie/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LuLinkedin />
             </a>
           </li>
@@ -53,7 +57,11 @@ export default function Navbar() {
             </a>
           </li>
           <li>
-            <a href="https://github.com/IloveNooodles">
+            <a
+              href="https://github.com/IloveNooodles"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LuGithub />
             </a>
           </li>

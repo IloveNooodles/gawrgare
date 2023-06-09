@@ -30,16 +30,34 @@ export default function Home() {
             <p>
               Currently working in{' '}
               <span>
-                <a href="https://www.makmur.id/">makmur.id</a>
+                <a
+                  href="https://www.makmur.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  makmur.id
+                </a>
               </span>{' '}
               as an software engineer intern. Previously was working as an
               intern in{' '}
               <span>
-                <a href="https://www.sayurbox.com/">Sayurbox</a>
+                <a
+                  href="https://www.sayurbox.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Sayurbox
+                </a>
               </span>
               ,{' '}
               <span>
-                <a href="https://www.garena.co.id/">Garena</a>
+                <a
+                  href="https://www.garena.co.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Garena
+                </a>
               </span>
               , and Stealth Startup.
             </p>
