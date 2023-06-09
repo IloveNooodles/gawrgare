@@ -5,10 +5,10 @@ export interface CardProps {
   title: string;
   description: string;
   githubLink: string;
-  websiteLink: string;
+  websiteLink?: string;
   techStackUsed: string;
   category: string;
-  date: string
+  date: string;
 }
 
 export default function Cards(props: CardProps) {
