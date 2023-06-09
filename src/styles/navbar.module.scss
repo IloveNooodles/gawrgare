@@ -1,19 +1,28 @@
+@import 'mixins';
+@import 'variables';
+
 .navlinks {
   display: flex;
   justify-content: flex-end;
-  line-height: 1em;
+  line-height: $line-heigth;
   flex-direction: row;
   align-items: center;
-  column-gap: 1rem;
-  padding: 2rem;
+  column-gap: $normal;
+  padding: $big;
 
   li {
     text-transform: capitalize;
-    font-size: 1.125rem;
+    font-size: $font-xmedium;
   }
 
   > svg {
-    font-size: 2rem;
+    font-size: $font-big;
+  }
+  div {
+    &:first-child {
+      display: flex;
+      column-gap: $normal;
+    }
   }
 }
 
@@ -23,7 +32,23 @@
   align-items: center;
 
   img {
-    margin-left: 1rem;
+    margin-left: $normal;
+  }
+}
+
+.navmenu {
+  display: none;
+}
+
+.rel {
+  display: flex;
+  flex-direction: column;
+  row-gap: $small;
+  li {
+    font-size: $font-medium;
+  }
+  @include phone {
+    display: none;
   }
 }
 

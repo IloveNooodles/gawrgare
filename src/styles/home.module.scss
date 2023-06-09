@@ -1,13 +1,16 @@
+@import "mixins";
+@import "variables";
+
 .span-style {
-  letter-spacing: 0.5em;
+  letter-spacing: $spacing;
 }
 
 .container {
   display: flex;
-  width: 100%;
+  width: $full;
   justify-content: center;
-  column-gap: 2rem;
-  padding-top: 2rem;
+  column-gap: $big;
+  padding-top: $big;
   flex-direction: row;
 }
 
@@ -22,7 +25,7 @@
 }
 
 .heading {
-  font-size: 2em;
-  padding-bottom: 2rem;
+  font-size: $font-big;
+  padding-bottom: $big;
   text-align: center;
 }
