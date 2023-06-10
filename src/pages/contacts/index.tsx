@@ -1,24 +1,36 @@
 import Seo from '@/components/seo';
 import { ubuntuMono } from '@/fonts/fonts';
+import styles from '@/styles/contacts.module.scss';
+import {
+  BsGithub,
+  BsInstagram,
+  BsLinkedin,
+  BsSpotify,
+  BsSteam,
+} from 'react-icons/bs';
+import { FiMail } from 'react-icons/fi';
 
 export default function Contacts() {
   return (
     <>
       <Seo title="Muhammad Garebaldhie - Contacts" />
-      <main className={`${ubuntuMono.className}`}>
+      <main className={`${ubuntuMono.className} ${styles.container}`}>
         <h1>
           {' '}
           me@gawrgare:~$ <span>find / gare</span>
         </h1>
-        <p>Don&apos;t hesitate to contact me, you can find me here</p>
-        <ul>
+        <h2>
+          Don&apos;t hesitate to contact me, <span> find </span> me here
+        </h2>
+        <ul className={styles.list}>
           <li>
             <a
               href="https://steamcommunity.com/id/AlmightyGare/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Steam
+              <BsSteam />
+              <p>AlmightyG</p>
             </a>
           </li>
           <li>
@@ -27,7 +39,8 @@ export default function Contacts() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Spotify
+              <BsSpotify />
+              <p>re</p>
             </a>
           </li>
           <li>
@@ -36,7 +49,8 @@ export default function Contacts() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Github
+              <BsGithub />
+              <p>IloveNooodles</p>
             </a>
           </li>
           <li>
@@ -45,7 +59,8 @@ export default function Contacts() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Linkedin
+              <BsLinkedin />
+              <p>Muhammad Garebaldhie</p>
             </a>
           </li>
           <li>
@@ -54,7 +69,8 @@ export default function Contacts() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Instagram
+              <BsInstagram />
+              <p>mgarebaldhie</p>
             </a>
           </li>
           <li>
@@ -63,10 +79,18 @@ export default function Contacts() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Email: mgarebaldhie80@gmail.com
+              <FiMail />
+              <p>mgarebaldhie80@gmail.com</p>
             </a>
           </li>
         </ul>
+        <iframe
+          className={styles.frame}
+          src="https://open.spotify.com/embed/track/09mEdoA6zrmBPgTEN5qXmN?utm_source=generator&theme=0"
+          height="200"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </main>
     </>
   );
