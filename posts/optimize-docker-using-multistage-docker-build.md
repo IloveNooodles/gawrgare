@@ -1,8 +1,8 @@
 ---
-title: 'Optimizing docker container using multistage docker build'
-description: 'Optimizing docker container using multistage docker build'
-slug: 'optimizing-docker-container-using-multistage-docker-build'
-published: '2021-10-10'
+title: 'Optimizing docker using multistage docker build'
+description: 'Optimizing docker using multistage docker build'
+slug: 'optimize-docker-using-multistage-docker-build'
+published: '2023-06-11'
 category: 'Docker'
 image: '/logo.png'
 ---

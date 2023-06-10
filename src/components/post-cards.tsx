@@ -1,35 +1,28 @@
-import { inter } from "@/fonts/fonts";
-import { PostMetadata } from "@/pages/blog";
-import styles from "@/styles/postCards.module.scss";
-import { formatDate } from "@/utils/date";
-import Image from "next/image";
-import Link from "next/link";
+import { ubuntuMono } from '@/fonts/fonts';
+import { PostMetadata } from '@/pages/blog';
+import styles from '@/styles/postCards.module.scss';
+import { formatDate } from '@/utils/date';
+import Link from 'next/link';
 
 export default function PostCard(props: PostMetadata) {
-  const { category, description, slug, published, title, image } = props;
+  const { category, description, slug, published, title, image, text } = props;
   const publishedDate = formatDate(published);
   const formattedSlug = `/blog/${slug}`;
   return (
-    <div className={`${styles.cards} ${inter.className}`}>
-      <Link href={formattedSlug}>
+    <Link
+      className={`${styles.cards} ${ubuntuMono.className}`}
+      href={formattedSlug}
+    >
+      <div className={styles.full}>
         <div>
-          <Image
-            src={image!}
-            alt="test"
-            width={100}
-            height={100}
-            className={styles["image-container"]}
-          />
-        </div>
-        <div className={styles.content}>
-          <h1>{title}</h1>
-          <div className={styles["content-meta"]}>
-            <p>{publishedDate}</p>
-            <p>{category}</p>
-          </div>
+          <h2>{title}</h2>
           <p>{description}</p>
         </div>
-      </Link>
-    </div>
+        <div className={styles.edge}>
+          <p>{text}</p>
+          <p>{publishedDate}</p>
+        </div>
+      </div>
+    </Link>
   );
 }
