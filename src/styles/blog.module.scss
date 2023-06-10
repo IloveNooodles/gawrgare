@@ -1,0 +1,53 @@
+@import 'mixins';
+@import 'variables';
+
+.container-relative {
+  position: relative;
+  width: 200px;
+  height: 200px;
+
+  img {
+    object-fit: cover;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  max-width: $max-card-width * 1.5;
+}
+
+.container {
+  margin: 0 auto;
+  width: 97.5%;
+
+  h1 {
+    padding: $normal / 3 0;
+    color: $white;
+
+    span {
+      display: none;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: $normal / 2 0;
+
+    span {
+      margin-right: $small;
+      color: $grey;
+    }
+  }
+
+  p {
+    text-align: left;
+  }
+
+  blockquote {
+    border-left: 1px white solid;
+    padding-left: $normal;
+  }
+}

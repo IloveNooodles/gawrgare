@@ -9,6 +9,8 @@ image: '/logo.png'
 
 # My First Post
 
+## Table of Contents
+
 ## Test
 
 I **love** using [Next.js](https://nextjs.org/)
