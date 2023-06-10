@@ -23,6 +23,10 @@
   h1 {
     padding: $normal / 3 0;
     color: $white;
+
+    span {
+      display: none;
+    }
   }
 
   h2,
@@ -31,6 +35,11 @@
   h5,
   h6 {
     padding: $normal / 2 0;
+
+    span {
+      margin-right: $small;
+      color: $grey;
+    }
   }
 
   p {

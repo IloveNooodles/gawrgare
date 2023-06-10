@@ -1,15 +1,16 @@
-import rehypeCodeTitles from "rehype-code-titles";
-import rehypeKatex from "rehype-katex";
-import rehypePrism from "rehype-prism-plus";
-import rehypeSlug from "rehype-slug";
-import rehypeStringify from "rehype-stringify";
-import remarkGfm from "remark-gfm";
-import remarkHeading from "rehype-autolink-headings"
-import remarkMath from "remark-math";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import { unified } from "unified";
-import remarkToc from "remark-toc";
+import { h } from 'hastscript';
+import remarkHeading from 'rehype-autolink-headings';
+import rehypeCodeTitles from 'rehype-code-titles';
+import rehypeKatex from 'rehype-katex';
+import rehypePrism from 'rehype-prism-plus';
+import rehypeSlug from 'rehype-slug';
+import rehypeStringify from 'rehype-stringify';
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import remarkToc from 'remark-toc';
+import { unified } from 'unified';
 
 export default async function markdownToHtml(markdown: string) {
   const result = await unified()
@@ -24,7 +25,11 @@ export default async function markdownToHtml(markdown: string) {
       showLineNumbers: true,
     })
     .use(rehypeSlug)
-    .use(remarkHeading)
+    .use(remarkHeading, {
+      content(node) {
+        return h('span', '#');
+      },
+    })
     .use(rehypeStringify)
     .process(markdown);
   return result.toString();

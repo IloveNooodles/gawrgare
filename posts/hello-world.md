@@ -67,14 +67,6 @@ a_{m,1} & a_{m,2} & \cdots & a_{m,n}
 \end{pmatrix}
 $$
 
-### This is heading 3
-
-#### This is heading 4
-
-##### This is heading 5
-
-###### This is heading 6
-
 > Blockquote
 >
 > Test
