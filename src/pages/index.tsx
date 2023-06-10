@@ -11,7 +11,7 @@ export default function Home() {
       <Seo />
       <main className={ubuntuMono.className}>
         <h1>
-          me@gawrgare:~$ <span className={styles['span-style']}> Whoami </span>
+          me@gawrgare:~$ <span className={styles['span-style']}> whoami </span>
         </h1>
         <section className={styles.container}>
           <Image

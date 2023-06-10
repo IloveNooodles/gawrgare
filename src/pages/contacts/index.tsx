@@ -10,7 +10,7 @@ export default function Contacts() {
           {' '}
           me@gawrgare:~$ <span>find / gare</span>
         </h1>
-        Don&apos;t hesitate to contact me, you can find me here
+        <p>Don&apos;t hesitate to contact me, you can find me here</p>
         <ul>
           <li>
             <a

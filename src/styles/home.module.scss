@@ -1,10 +1,6 @@
 @import 'mixins';
 @import 'variables';
 
-.span-style {
-  letter-spacing: $spacing;
-}
-
 .container {
   display: flex;
   width: $full;
@@ -30,12 +26,11 @@
 
 .heading {
   font-size: $font-big;
-  padding-bottom: $big;
+  padding-bottom: $big / 2;
   text-align: center;
 
   @include phone {
     margin: 0;
-    padding-bottom: $big / 2;
   }
 }
 
