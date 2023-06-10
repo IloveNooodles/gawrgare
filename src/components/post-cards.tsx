@@ -5,7 +5,7 @@ import { formatDate } from '@/utils/date';
 import Link from 'next/link';
 
 export default function PostCard(props: PostMetadata) {
-  const { category, description, slug, published, title, image, text } = props;
+  const { category, description, slug, published, title, text } = props;
   const publishedDate = formatDate(published);
   const formattedSlug = `/blog/${slug}`;
   return (
@@ -17,6 +17,7 @@ export default function PostCard(props: PostMetadata) {
         <div>
           <h2>{title}</h2>
           <p>{description}</p>
+          <p>Category: {category}</p>
         </div>
         <div className={styles.edge}>
           <p>{text}</p>

@@ -4,14 +4,15 @@ description: 'Welcome everyone'
 slug: 'hello-world'
 published: '2023-06-04'
 category: 'misc'
-image: '/vercel.svg'
+image: '/gare.jpg'
 ---
+# Test Drive
 
-# My First Post
-
-I **love** using [Next.js](https://nextjs.org/)
+---
+## Table of Contents
 
 ## Here goes code section
+
 this is example cpp code generated and display
 
 ```js:test/js showLineNumbers
@@ -20,7 +21,7 @@ i++;
 
 class Shape {
   draw() {
-    console.log("Uhhh maybe override me");
+    console.log("Uhhh maybe override meaaaaaaaaaaaaaaaaaaaaa");
   }
 }
 
@@ -38,11 +39,13 @@ for(let i = 0; i < 3; i++){
 
 ```
 
+This is example of opening file in `python`
+
 ```python:solve.py showLineNumbers
 f = open("read.enc", "rb")
 ```
 
-## Here are some math equation
+## Here are some cool math equation
 
 $$
 {X \sim Normal \; (\mu,\sigma^2)}
@@ -53,3 +56,54 @@ $$
 $$
 \mathrm{e} = \sum_{n=0}^{\infty} \dfrac{1}{n!}
 $$
+
+$$
+A_{m,n} =
+\begin{pmatrix}
+a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{m,1} & a_{m,2} & \cdots & a_{m,n}
+\end{pmatrix}
+$$
+
+### This is heading 3
+
+#### This is heading 4
+
+##### This is heading 5
+
+###### This is heading 6
+
+> Blockquote
+>
+> Test
+
+## Styled text
+
+~~Scratched Text~~
+*Italic* and **Bold**
+
+- Item 1
+- Item 2
+  - Item 2a (2 tabs)
+  - Item 2b
+    - Item 2b-1 (4 tabs)
+    - Item 2b-2
+
+1. Item 1
+2. Item 2
+3. Item 3
+    - Item 3a
+    - Item 3b
+
+## Tasklist
+
+- [ ] to do
+- [x] done
+
+## Footnote
+
+A note[^1]
+
+[^1]: Big note.

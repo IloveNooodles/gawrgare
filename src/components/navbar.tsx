@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className={`${styles.navbar} ${ubuntuMono.className} `}>
       <Link href="/" className={styles.disabled}>
-        <Image src={Logo} alt="Gare logo" />
+        <Image src={Logo} alt="Gare logo" loading="lazy" quality={100} />
       </Link>
       <ul className={styles.navlinks}>
         <div className={styles.flex}>

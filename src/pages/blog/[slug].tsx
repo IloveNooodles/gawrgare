@@ -1,7 +1,8 @@
 import Seo from '@/components/seo';
-import { inter } from '@/fonts/fonts';
+import { ubuntuMono } from '@/fonts/fonts';
 import { getDocBySlug } from '@/lib/docs';
 import markdownToHtml from '@/lib/markdown';
+import styles from '@/styles/blog.module.scss';
 import fs from 'fs';
 import { join } from 'path';
 import { PostMetadata } from '.';
@@ -29,7 +30,7 @@ export async function getStaticProps(props: PostProps) {
   const { slug } = props.params;
 
   let markdownData = getDocBySlug(slug);
-  let { content, meta } = markdownData;
+  let { content } = markdownData;
 
   let markdownProcessed = await markdownToHtml(content);
 
@@ -52,12 +53,23 @@ export interface BlogPostProps {
 
 export default function BlogPost(props: BlogPostProps) {
   const { meta } = props.markdownData;
-
   return (
     <>
       <Seo {...meta} />
-      <main className={inter.className}>
+      <main className={`${ubuntuMono.className} ${styles.main}`}>
+        {/* {meta.image && (
+          <div className={styles['container-relative']}>
+            <Image
+              src={meta.image}
+              alt={meta.description}
+              quality={100}
+              loading="lazy"
+              fill
+            />
+          </div>
+        )} */}
         <div
+          className={styles.container}
           dangerouslySetInnerHTML={{ __html: props.markdownProcessed }}
         ></div>
       </main>

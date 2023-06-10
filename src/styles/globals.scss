@@ -20,6 +20,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  color: $black;
+  background-color: $selected;
+}
+
 a {
   text-decoration: none;
   color: $white;
