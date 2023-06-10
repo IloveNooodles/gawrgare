@@ -1,2 +1,30 @@
-.span {
+@import "mixins";
+@import "variables";
+
+.blogs {
+  h1 {
+    padding-bottom: $normal / 2;
+  }
+
+  h2 {
+    width: $full;
+  }
+}
+
+.blogs-container {
+  display: grid;
+  gap: $normal;
+  align-items: center;
+
+  @include rev-phone {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include rev-tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.vertical {
+  padding: $normal 0;
 }
