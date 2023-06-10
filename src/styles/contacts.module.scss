@@ -1,0 +1,37 @@
+@import 'mixins';
+@import 'variables';
+
+.list {
+  display: grid;
+  flex-direction: column;
+
+  a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: $normal / 2;
+    align-items: center;
+    gap: $normal / 2;
+
+    p {
+      width: fit-content;
+    }
+  }
+}
+
+.container {
+  h2 {
+    padding: $normal / 2 0;
+    span {
+      color: $green;
+    }
+  }
+}
+
+.frame {
+  height: 200;
+  padding-top: $normal;
+  width: 100%;
+  max-width: $max-card-width;
+  border: 0px;
+}
