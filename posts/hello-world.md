@@ -6,22 +6,24 @@ published: '2023-06-04'
 category: 'misc'
 image: '/gare.jpg'
 ---
-# Test Drive
+# Hello World
 
 ---
 ## Table of Contents
 
-## Here goes code section
+## Feature
 
-this is example cpp code generated and display
+Hi i'm gare and this is my first post in my blog. Here i showed you the features of my blog
 
+### Code
+Below are code in javascript
 ```js:test/js showLineNumbers
 int i = 0;
 i++;
 
 class Shape {
   draw() {
-    console.log("Uhhh maybe override meaaaaaaaaaaaaaaaaaaaaa");
+    console.log("Drawing");
   }
 }
 
@@ -43,9 +45,12 @@ This is example of opening file in `python`
 
 ```python:solve.py showLineNumbers
 f = open("read.enc", "rb")
+data = f.read()
+f.close()
+print(data)
 ```
 
-## Here are some cool math equation
+### Here are some cool math equation
 
 $$
 {X \sim Normal \; (\mu,\sigma^2)}
@@ -67,15 +72,19 @@ a_{m,1} & a_{m,2} & \cdots & a_{m,n}
 \end{pmatrix}
 $$
 
+
+
+### Styled text
 > Blockquote
 >
-> Test
+> Incoming  
 
-## Styled text
 
-~~Scratched Text~~
-*Italic* and **Bold**
+~~this text is scrtached~~  
+*Italic text*    
+**Bold text**  
 
+### List text
 - Item 1
 - Item 2
   - Item 2a (2 tabs)
@@ -94,7 +103,7 @@ $$
 - [ ] to do
 - [x] done
 
-## Footnote
+## Reference
 
 A note[^1]
 

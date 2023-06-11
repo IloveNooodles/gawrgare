@@ -194,7 +194,7 @@
     "date": "Apr 19, 2023"
   },
   {
-    "title": "Simple Rust Multithreaded Server",
+    "title": "Rust Multithreaded Server",
     "description": "Multithreaded web server created using rust. followed implementation from `rust-by-example` by creating threadpool to handle all request",
     "techStackUsed": "Rust",
     "githubLink": "https://github.com/IloveNooodles/simple-multithreaded-rust-webserver",

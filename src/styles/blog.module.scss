@@ -35,19 +35,25 @@
   h5,
   h6 {
     padding: $normal / 2 0;
+    color: $grey;
+    font-size: $font-medium;
 
     span {
       margin-right: $small;
-      color: $grey;
     }
   }
 
   p {
     text-align: left;
+    padding: $normal / 4 0;
   }
 
   blockquote {
-    border-left: 1px white solid;
+    border-left: 1px $grey solid;
     padding-left: $normal;
+    margin-bottom: $normal;
+    margin-top: $normal / 2;
+    margin-left: $normal;
+    color: $white;
   }
 }

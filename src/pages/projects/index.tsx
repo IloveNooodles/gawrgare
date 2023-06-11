@@ -2,7 +2,6 @@ import Cards, { CardProps } from '@/components/cards';
 import Seo from '@/components/seo';
 import { ubuntuMono } from '@/fonts/fonts';
 import styles from '@/styles/projects.module.scss';
-import { sortDate } from '@/utils/date';
 import useSWR from 'swr';
 
 export const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -17,9 +16,7 @@ const renderProjects = (data: any, error: any, isLoading: boolean) => {
   }
 
   const projectList = data as CardProps[];
-  const project = projectList
-    .filter((p) => p.category === 'projects')
-    .sort(sortDate);
+  const project = projectList.filter((p) => p.category === 'projects');
   const miniProject = projectList.filter((p) => p.category === 'mini-projects');
   const contributed = projectList.filter((p) => p.category === 'contributed');
 
