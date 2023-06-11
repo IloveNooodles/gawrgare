@@ -84,13 +84,13 @@ export default function Contacts() {
             </a>
           </li>
         </ul>
-        <iframe
+        {/* <iframe
           className={styles.frame}
           src="https://open.spotify.com/embed/track/09mEdoA6zrmBPgTEN5qXmN?utm_source=generator&theme=0"
           height="200"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
-        ></iframe>
+        ></iframe> */}
       </main>
     </>
   );

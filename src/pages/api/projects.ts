@@ -1,4 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import { sortDate } from '@/utils/date';
 import * as fs from 'fs/promises';
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { join } from 'path';
@@ -22,6 +23,7 @@ export default async function handler(
   const fileContents = await fs.readFile(fileDir, 'utf-8');
 
   const transformedData = eval(fileContents);
+  const sortedData = transformedData.sort(sortDate);
 
   res.status(200).json(transformedData);
 }
