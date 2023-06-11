@@ -53,16 +53,16 @@ When we build our container, docker will execute the statement 1 by 1 from the t
 
 If you feel overwhelmed, it's okay and completly normal I will explain it line by line.
 
-Please refer to the [^4] for much clearer explanation
+Please refer to the [^2] for much clearer explanation
 
 #### FROM
 ```dockerfile:standard_dockerfile
 FROM golang:alpine
 ```
 
-This line are starting point of dockerfile, we usually use the **FROM** syntax to pull the image that we want to use. All the image are available in the dockerhub[^2].
+This line are starting point of dockerfile, we usually use the **FROM** syntax to pull the image that we want to use. All the image are available in the dockerhub[^3].
 
-Dockerhub also provide different kind of tags such as **alpine**, **bullsye**, or **latest**[^3].
+Dockerhub also provide different kind of tags such as **alpine**, **bullsye**, or **latest**[^4].
 
 I will always try to use the **alpine** tag because it has very small size, really handy for quick development. But alpine tag also have it's own drawback, the smaller size means more limited package or service that it has. **alpine** tag usually doesnt have **bash** shell and always use the **sh**. It little bit unconvinient but nice tradeoff.
 
@@ -110,7 +110,7 @@ EXPOSE 3001
 
 EXPOSE in a nut shell, will make our container listen that port. so that syntax basically means container will listen at port 3001 so that we can access the container at 3001
 
-Using expose doesn't mean we can directly access the docker at 3001, we must map the port using the **-p** flags. Please refer to [^4] 
+Using expose doesn't mean we can directly access the docker at 3001, we must map the port using the **-p** flags. Please refer to [^2]. 
 
 #### CMD
 ```dockerfile:standard_dockerfile
@@ -187,7 +187,7 @@ As we can see the normal docker build have over than 500mb image size whereas th
 So that's all from me, thank you for reading till the end! I hope you can learn something after reading this article.
 
 [^1]: `1.` [Docker website](https://www.docker.com/)
-[^2]: `2.` [Dockerhub](https://hub.docker.com/)
-[^3]: `3.` [Golang dockerhub](https://hub.docker.com/_/golang/tags)
-[^4]: `4.` [Docker instruction explained](https://docs.docker.com/engine/reference/builder)
+[^2]: `2.` [Docker instruction explained](https://docs.docker.com/engine/reference/builder) 
+[^3]: `3.` [Dockerhub](https://hub.docker.com/)    
+[^4]: `4.` [Golang dockerhub](https://hub.docker.com/_/golang/tags)
 [^5]: `5.` [Docker multistage](https://docs.docker.com/build/building/multi-stage/)
