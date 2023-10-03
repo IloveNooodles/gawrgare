@@ -12,12 +12,13 @@ image: '/gare.jpg'
 ## Table of Contents
 
 ## Feature
-
+---
 Hi i'm gare and this is my first post in my blog. Here i showed you the features of my blog
 
 ### Code
+---
 Below are code in javascript
-```js:test/js showLineNumbers
+```js:test/js
 int i = 0;
 i++;
 
@@ -43,7 +44,7 @@ for(let i = 0; i < 3; i++){
 
 This is example of opening file in `python`
 
-```python:solve.py showLineNumbers
+```python:solve.py
 f = open("read.enc", "rb")
 data = f.read()
 f.close()
@@ -51,7 +52,7 @@ print(data)
 ```
 
 ### Here are some cool math equation
-
+---
 $$
 {X \sim Normal \; (\mu,\sigma^2)}
 $$
@@ -75,16 +76,20 @@ $$
 
 
 ### Styled text
-> Blockquote
+---
+
+
+> Human is great thinker
 >
-> Incoming  
+> Gare  
 
 
 ~~this text is scrtached~~  
-*Italic text*    
+*Italic text*
 **Bold text**  
 
 ### List text
+---
 - Item 1
 - Item 2
   - Item 2a (2 tabs)

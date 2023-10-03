@@ -21,15 +21,8 @@ export default async function markdownToHtml(markdown: string) {
     .use(remarkRehype)
     .use(rehypeKatex)
     .use(rehypeCodeTitles)
-    .use(rehypePrism, {
-      showLineNumbers: true,
-    })
+    .use(rehypePrism)
     .use(rehypeSlug)
-    .use(remarkHeading, {
-      content(node) {
-        return h('span', '#');
-      },
-    })
     .use(rehypeStringify)
     .process(markdown);
   return result.toString();

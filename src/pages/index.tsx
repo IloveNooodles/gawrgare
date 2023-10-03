@@ -31,11 +31,11 @@ export default function Home() {
               Currently working in{' '}
               <span>
                 <a
-                  href="https://www.makmur.id/"
+                  href="https://www.sayurbox.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  makmur.id
+                  Matchmade
                 </a>
               </span>{' '}
               as an software engineer intern. Previously was working as an
@@ -57,6 +57,16 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   Garena
+                </a>
+              </span>
+              ,{' '}
+              <span>
+                <a
+                  href="https://www.makmur.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  makmur.id
                 </a>
               </span>
               , and Stealth Startup.
